@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HW3 Simple Calculator</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<h1>Simple Calculator</h1>
+
+	<main>
+		<section class="first_calc">
+			<label for="number1_input">First Value:</label>
+			<input type="text" id="number1_input" name="their_input"/>
+			<br>
+
+			<input type="button" value="1" onclick = "input1('1')"/>
+			<input type="button" value="2" onclick = "input1('2')"/>
+			<input type="button" value="3" onclick = "input1('3')"/>
+			<br>
+			<input type="button" value="4" onclick = "input1('4')"/>
+			<input type="button" value="5" onclick = "input1('5')"/>
+			<input type="button" value="6" onclick = "input1('6')"/>
+			<br>
+			<input type="button" value="7" onclick = "input1('7')"/>
+			<input type="button" value="8" onclick = "input1('8')"/>
+			<input type="button" value="9" onclick = "input1('9')"/>
+			<br>
+			<input type="button" value="-" onclick = "input1('-')"/>
+			<input type="button" value="0" onclick = "input1('0')"/>
+			<input type="button" value="." onclick = "input1('.')"/>
+		</section>
+
+		<section id="operations">
+			<input type="radio" value="plus" name="operations" id = "plus"/>
+			<label for="plus"><b>+</b></label>
+			<br>
+			
+			<input type="radio" value="minus" name="operations" id = "minus"/>
+			<label for="minus"><b>-</b></label>
+			<br>
+
+			<input type="radio" value="times" name="operations" id = "times"/>
+			<label for="times"><b>x</b></label>
+			<br>
+
+			<input type="radio" value="divide" name="operations" id="divide"/>
+			<label for="divide"><b>&divide;</b></label>
+		</section>
+
+		<section class="second_calc">
+			<label for="number2_input">Second Value:</label>
+			<input type="text" id="number2_input" name="their_input2"/>
+
+			<input type="button" value="Compute" onclick = "compute()"/>
+			<br>
+
+			<input type="button" value="1" onclick = "input2('1')"/>	
+			<input type="button" value="2" onclick = "input2('2')"/>
+			<input type="button" value="3" onclick = "input2('3')"/>
+			<br>
+			<input type="button" value="4" onclick = "input2('4')"/>
+			<input type="button" value="5" onclick = "input2('5')"/>
+			<input type="button" value="6" onclick = "input2('6')"/>
+			<br>
+			<input type="button" value="7" onclick = "input2('7')"/>
+			<input type="button" value="8" onclick = "input2('8')"/>
+			<input type="button" value="9" onclick = "input2('9')"/>
+			<br>
+			<input type="button" value="-" onclick = "input2('-')"/>
+			<input type="button" value="0" onclick = "input2('0')"/>
+			<input type="button" value="." onclick = "input2('.')"/>
+		</section>
+
+		<p id="result">Result is: </p>
+	</main>
+</body>
+
+</html>

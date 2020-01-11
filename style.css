@@ -1,0 +1,36 @@
+/*CSS Style Sheet Code*/
+
+.first_calc
+{
+	border: 1px solid black;
+	height:150px;
+	width:300px;
+	position:absolute;
+}
+
+.second_calc
+{
+	border: 1px solid black;
+	height:150px;
+	width:350px;
+	position:relative;
+	left:390px;
+	bottom:75px;
+}
+
+#operations
+{
+	border: 1px solid black;
+	height:75px;
+	width:70px;
+	position: relative;
+	left: 310px;
+	top:55px;
+}
+#result
+{
+	position:absolute;
+	left:750px;
+	top:200px;
+}
+
